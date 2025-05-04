@@ -32,6 +32,9 @@ module.exports = {
       typedRoutes: true
     },
     extra: {
+      eas: {
+        projectId: '4d985f33-28f6-412c-9099-200bcd18f8cb',
+      },
       firebaseApiKey: process.env.FIREBASE_API_KEY,
       firebaseAuthDomain: process.env.FIREBASE_AUTH_DOMAIN,
       firebaseProjectId: process.env.FIREBASE_PROJECT_ID,
@@ -39,9 +42,12 @@ module.exports = {
       firebaseMessagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
       firebaseAppId: process.env.FIREBASE_APP_ID,
       apiUrl: process.env.API_URL,
-      eas: {
-        projectId: process.env.EAS_PROJECT_ID
-      }
+    },
+    updates: {
+      url: 'https://u.expo.dev/4d985f33-28f6-412c-9099-200bcd18f8cb', // رابط التحديث الخاص بمشروعك
+    },
+    runtimeVersion: {
+      policy: 'appVersion', // سياسة استخدام الإصدار بناءً على نسخة التطبيق
     }
   }
 };
